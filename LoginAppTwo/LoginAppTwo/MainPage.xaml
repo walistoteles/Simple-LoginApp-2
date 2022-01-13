@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginAppTwo.MainPage">
+
+    <StackLayout Padding="50">
+
+        <Frame HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="10" >
+            <StackLayout>
+                <Entry x:Name="username" Placeholder="User"/>
+                <Entry x:Name="password" IsPassword="True" Placeholder="Password"/>
+                <Grid>
+                    <Button Text="Login" BackgroundColor="LightSeaGreen" FontAttributes="Bold" Clicked="Login_Clicked"/>
+                    <Button Grid.Column="1" Text="Register" BackgroundColor="LightSeaGreen" FontAttributes="Bold" Clicked="Register_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        
+
+    </StackLayout>
+
+</ContentPage>
